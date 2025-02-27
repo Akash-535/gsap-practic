@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gsap Animation</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="bg-black text-white text-5xl min-h-screen flex justify-center items-center">Scroll down for
+        animation</section>
+    <section class="min-h-screen relative bg-[#B5EFCB] overflow-hidden my-section">
+        <img class="absolute top-0 left-0 w-full" src="./assets/images/webp/top-img.webp" alt="top img">
+        <div class="absolute right-20 bottom-20 flex flex-col items-center gap-10 arrow-text">
+            <p class="rotate-90 text-white leading-[22px]">Su di noi</p>
+            <img class="max-w-[43px]" src="./assets/images/svg/arrow.svg" alt="">
+        </div>
+        <!-- Top text -->
+        <p class="text-white relative z-10 text-center pt-28 text-3xl font-normal leading-[50px] tracking-[-1px]">Ideata
+            da <span
+                class="text-[#29424D] leading-3 py-[9px] px-6 border border-white bg-[#7EE49C80] text-2xl rounded-[10px]">noi</span>
+            grazie
+            all’esperienza
+            acquisita nel
+            <span
+                class="text-[#29424D] leading-3 py-[9px] px-6 border border-white bg-[#7EE49C80] text-2xl rounded-[10px]">tempo</span>
+            .
+        </p>
+        <!-- Side arrow image -->
+        <img class="max-w-[660px] absolute side-image min-[2500.98px]:top-[43%]"
+            src="./assets/images/webp/side-image.webp" alt="side image">
+        <!-- Text div one -->
+        <div class="absolute text-div -translate-y-1/2">
+            <div class="max-w-[764px] min-h-[318px] mx-auto relative w-full flex items-center justify-center flex-col">
+                <img class="absolute top-0 left-0" src="./assets/images/svg/corner-arrow.svg" alt="corner image">
+                <img class="absolute bottom-0 right-0 rotate-180" src="./assets/images/svg/corner-arrow.svg"
+                    alt="corner image">
+                <h2 class="text-[50px] leading-[60px] text-[#29424D] max-w-[698px]">Siamo un’azienda digitale che si
+                    concentra sulla
+                    generazione
+                    di opportunità di business.</h2>
+                <div>
+                    <img class="max-w-[51px]" src="./assets/images/webp/federico-img.webp" alt="federico">
+                </div>
+            </div>
+        </div>
+
+        <!-- Text div two -->
+        <div class="absolute text-div-two -translate-y-1/2">
+            <div class="max-w-[764px] min-h-[318px] mx-auto relative w-full flex items-center justify-center flex-col">
+                <img class="absolute top-0 left-0" src="./assets/images/svg/corner-arrow.svg" alt="corner image">
+                <img class="absolute bottom-0 right-0 rotate-180" src="./assets/images/svg/corner-arrow.svg"
+                    alt="corner image">
+                <h2 class="text-[50px] leading-[60px] text-[#29424D] max-w-[698px]">Obiettivi chiari e definiti
+                    perseguiti con un approccio personalizzato verso risultati concreti e misurabili.</h2>
+                <div>
+                    <img class="max-w-[51px]" src="./assets/images/webp/matteo-img.webp" alt="federico">
+                </div>
+            </div>
+        </div>
+
+        <!-- Text div three -->
+        <div class="absolute text-div-three -translate-y-1/2">
+            <div class="max-w-[764px] min-h-[318px] mx-auto relative w-full flex items-center justify-center flex-col">
+                <img class="absolute top-0 left-0" src="./assets/images/svg/corner-arrow.svg" alt="corner image">
+                <img class="absolute bottom-0 right-0 rotate-180" src="./assets/images/svg/corner-arrow.svg"
+                    alt="corner image">
+                <h2 class="text-[50px] leading-[60px] text-[#29424D] max-w-[698px]">Qualifichiamo i dati in tempo reale
+                    consentendo di incrementare il ROI delle azioni di lead generation.</h2>
+                <div>
+                    <img class="max-w-[51px]" src="./assets/images/webp/matteo-img.webp" alt="federico">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

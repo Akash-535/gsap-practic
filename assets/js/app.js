@@ -389,7 +389,7 @@ mm.add("(max-width:678.98px)", () => {
     }, {
         opacity: 1,
         duration: 15,
-        right: "-2%"
+        right: "2%"
     }).fromTo(".text-div-three", {
         opacity: 0,
         left: "-60%"
@@ -397,11 +397,5 @@ mm.add("(max-width:678.98px)", () => {
         opacity: 1,
         duration: 25,
         left: "7%"
-    }).fromTo(".arrow-text", {
-        bottom: "80px",
-        duration: 70
-    }, {
-        bottom: "60%",
-        duration: 70
-    }, 2)
+    })
 });

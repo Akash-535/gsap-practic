@@ -8,17 +8,14 @@ mm.add("(min-width:1536.98px)", () => {
     });
     gsap.set(".text-div", {
         opacity: 0,
-        top: "58%",
         left: '47%',
     });
     gsap.set(".text-div-two", {
         opacity: 0,
-        top: "58%",
         left: '47%',
     });
     gsap.set(".text-div-three", {
         opacity: 0,
-        top: "58%",
         left: '47%',
     });
     gsap.set(".heading-text", {
@@ -28,10 +25,10 @@ mm.add("(min-width:1536.98px)", () => {
     ScrollTrigger.create({
         trigger: ".my-section",
         start: "top top",
-        end: "300%",
+        end: "600%",
         pin: true,
         animation: tl,
-        scrub: 2,
+        scrub: true,
     });
 
 
@@ -102,26 +99,23 @@ mm.add("(min-width:1279.98px) and (max-width:1536.98px)", () => {
     })
     gsap.set(".text-div", {
         opacity: 0,
-        top: "48%",
         left: '47%',
     });
     gsap.set(".text-div-two", {
         opacity: 0,
-        top: "48%",
         left: '47%',
     });
     gsap.set(".text-div-three", {
         opacity: 0,
-        top: "48%",
         left: '47%',
     });
     ScrollTrigger.create({
         trigger: ".my-section",
         start: "top top",
-        end: "300%",
+        end: "600%",
         pin: true,
         animation: tl,
-        scrub: 2,
+        scrub: 3,
     });
 
 
@@ -208,10 +202,10 @@ mm.add("(min-width:1023.98px) and (max-width:1280.98px)", () => {
     ScrollTrigger.create({
         trigger: ".my-section",
         start: "top top",
-        end: "300%",
+        end: "600%",
         pin: true,
         animation: tl,
-        scrub: 2,
+        scrub: true,
     });
 
 
@@ -295,10 +289,10 @@ mm.add("(min-width:678.98px) and (max-width:1023.98px)", () => {
     ScrollTrigger.create({
         trigger: ".my-section",
         start: "top top",
-        end: "300%",
+        end: "600%",
         pin: true,
         animation: tl,
-        scrub: 2,
+        scrub: true,
     });
 
 
@@ -362,10 +356,10 @@ mm.add("(max-width:678.98px)", () => {
     ScrollTrigger.create({
         trigger: ".my-section",
         start: "top top",
-        end: "300%",
+        end: "600%",
         pin: true,
         animation: tl,
-        scrub: 2,
+        scrub: true,
     });
 
 

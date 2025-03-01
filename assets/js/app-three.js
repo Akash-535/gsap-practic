@@ -1,0 +1,126 @@
+const tl = gsap.timeline();
+const mm = gsap.matchMedia();
+
+mm.add("(min-width:103.98px)", () => {
+    gsap.set(".text-content-one", {
+        visibility: 'inherit',
+        opacity: 1,
+    })
+    gsap.set(".card-one", {
+        visibility: 'inherit',
+        opacity: 1
+    })
+    ScrollTrigger.create({
+        trigger: ".animate-section",
+        pin: true,
+        start: "top top",
+        end: "600%",
+        scrub: 3,
+        animation: tl,
+    })
+    tl.fromTo(".heading-text", {
+        y: '-100%',
+        opacity: 0,
+        duration: 1
+    }, {
+        y: 0,
+        opacity: 1,
+        duration: 2
+    }).fromTo(".text-content-one", {
+        visibility: 'inherit',
+        opacity: 1,
+    }, {
+        visibility: 'hidden',
+        opacity: 0,
+    }).fromTo(".text-content-two", {
+        visibility: 'hidden',
+        opacity: 0,
+        duration: 3
+    }, {
+        visibility: 'inherit',
+        opacity: 1,
+        duration: 3
+    }).fromTo(".text-content-two", {
+        visibility: 'inherit',
+        opacity: 1,
+    }, {
+        visibility: 'hidden',
+        opacity: 0,
+    }).fromTo(".text-content-three", {
+        visibility: 'hidden',
+        opacity: 0,
+        duration: 3
+    }, {
+        visibility: 'inherit',
+        opacity: 1,
+        duration: 3
+    }).fromTo(".text-content-three", {
+        visibility: 'inherit',
+        opacity: 1,
+    }, {
+        visibility: 'hidden',
+        opacity: 0,
+    }).fromTo(".text-content-four", {
+        visibility: 'hidden',
+        opacity: 0,
+        duration: 3
+    }, {
+        visibility: 'inherit',
+        opacity: 1,
+        duration: 3
+    }).fromTo(".text-content-four", {
+        visibility: 'inherit',
+        opacity: 1,
+    }, {
+        visibility: 'hidden',
+        opacity: 0,
+    }).fromTo(".text-content-five", {
+        visibility: 'hidden',
+        opacity: 0,
+        duration: 3
+    }, {
+        visibility: 'inherit',
+        opacity: 1,
+        duration: 3
+    }).fromTo(".text-content-five", {
+        visibility: 'inherit',
+        opacity: 1,
+    }, {
+        visibility: 'hidden',
+        opacity: 0,
+    }).fromTo(".text-content-six", {
+        visibility: 'hidden',
+        opacity: 0,
+        duration: 3
+    }, {
+        visibility: 'inherit',
+        opacity: 1,
+        duration: 2
+    }).fromTo(".card-one", {
+        visibility: 'inherit',
+        opacity: 1
+    }, {
+        visibility: 'hidden',
+        opacity: 0
+    }).fromTo(".card-two", {
+        visibility: 'hidden',
+        opacity: 0
+    }, {
+        visibility: 'inherit',
+        duration: 5,
+        opacity: 1
+    }).fromTo(".card-two", {
+        visibility: 'inherit',
+        opacity: 1
+    }, {
+        visibility: 'hidden',
+        opacity: 0
+    }).fromTo(".card-three", {
+        visibility: 'hidden',
+        opacity: 0
+    }, {
+        visibility: 'inherit',
+        duration: 5,
+        opacity: 1
+    })
+})

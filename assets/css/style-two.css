@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "Neue Machina Bold";
+  src: local("Pacifico Regular"), local("Neue-Machina-Bold"),
+    url(../fonts/NeueMachina-Ultrabold.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Neue Machina regular;
+  src: local("Pacifico Regular"), local("Neue-Machina-Regular"),
+    url(../fonts/NeueMachina-Regular.ttf) format("woff2");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.font-neueMachina-regular {
+  font-family: "Neue Machina regular", sans-serif;
+}
+.font-neueMachina-bold {
+  font-family: "Neue Machina Bold", sans-serif;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}

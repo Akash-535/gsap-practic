@@ -14,7 +14,7 @@ ScrollTrigger.create({
     animation: tl,
 })
 tl.fromTo(".heading-text", {
-    y: '-100%',
+    y: -100,
     opacity: 0,
     duration: 1
 }, {

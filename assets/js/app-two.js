@@ -34,9 +34,9 @@ tl.fromTo(".scroll-line", {
 }, {
     opacity: 0
 }, 1.9).fromTo(".button-one", {
-    rotate: 0,
-}, {
     rotate: -5,
+}, {
+    rotate: 0,
 }, 1.9).fromTo(".button-two", {
     rotate: 0,
 }, {
